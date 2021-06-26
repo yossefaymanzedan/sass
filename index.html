@@ -1,0 +1,1499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="custom.css">
+
+    <title>Sass Project</title>
+  </head>
+  <body class="bg-danger">
+<div class="clearfix">
+
+<div class="float-lg-end">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark align-items-start px-5  bg-info">
+        <div class="container-fluid m-0 p-0">
+          <a class="navbar-brand d-lg-none d-block" href="#">Sass project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse overflow-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex flex-column navbar-nav-scroll me-auto mb-2 mb-lg-0 py-5 px-2">
+<div class="row">
+    <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+      </div>
+</div>
+<div class="row mt-5">
+
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <canvas id="chartjs-line"></canvas>
+    </div>
+    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        <canvas id="bar-chart-grouped" width="100%" height="70"></canvas>
+
+    </div>
+    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+        <canvas id="polar-chart" width="100%" height="70"></canvas>
+
+
+    </div>
+    </div>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="main overflow-auto">
+        <div class="container mt-4">
+            <div class="d-flex">
+                <button class="btn btn-default me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="svg-icon svg-icon-1"><svg width="24px" fill="#20d489" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Text-/-Article" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect id="bound" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle-20" fill="#20d489" x="4" y="5" width="16" height="3" rx="1.5"></rect><path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L12.5,10 C13.3284271,10 14,10.6715729 14,11.5 C14,12.3284271 13.3284271,13 12.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" id="Combined-Shape" fill="#20d489" opacity="0.3"></path></g></svg></span>
+
+                    </button>
+
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                    <h5>Start.</h5>
+                    <button type="button" class="btn  btn-green fw-bold" style="color: white;" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                    </div>
+                    <div class="offcanvas-body">
+<div class="row">
+    <div class="col-md-6 col-12 mb-4">
+        <div class="row">
+            <div class="col-sm-4">
+<h5 class="fw-bolder mb-2">Dashboards</h5>
+<ul class="list-unstyled">
+    <li class="mb-2">
+        <a href="#" class="link-green">Start</a>
+    </li>
+
+    <li class="mb-2">
+        <a href="#" class="link">Extender</a>
+    </li>
+
+    <li class="mb-2">
+        <a href="#" class="link">Light</a>
+    </li>
+
+
+
+    <li class="mb-2">
+        <a href="#" class="link">Compact</a>
+    </li>
+</ul>
+            </div>
+
+
+
+
+
+
+            <div class="col-sm-4">
+                <h5 class="fw-bolder mb-2">Apps</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="link">Start</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="link">Extender</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="link">Light</a>
+                    </li>
+
+
+
+                    <li class="mb-2">
+                        <a href="#" class="link">Compact</a>
+                    </li>
+                </ul>
+</div>
+
+
+
+
+
+
+
+
+<div class="col-sm-4">
+    <h5 class="fw-bolder mb-2">General</h5>
+    <ul class="list-unstyled">
+        <li class="mb-2">
+            <a href="#" class="link">Start</a>
+        </li>
+
+        <li class="mb-2">
+            <a href="#" class="link">Extender</a>
+        </li>
+
+        <li class="mb-2">
+            <a href="#" class="link">Light</a>
+        </li>
+
+
+
+        <li class="mb-2">
+            <a href="#" class="link">Compact</a>
+        </li>
+    </ul>
+                </div>
+
+
+
+
+
+</div>
+<div class="row mt-sm-5">
+    <div class="col-sm-4">
+        <h5 class="fw-bolder mb-2">Profile</h5>
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="#" class="link">Start</a>
+            </li>
+
+            <li class="mb-2">
+                <a href="#" class="link">Extender</a>
+            </li>
+
+            <li class="mb-2">
+                <a href="#" class="link">Light</a>
+            </li>
+
+
+
+            <li class="mb-2">
+                <a href="#" class="link">Compact</a>
+            </li>
+        </ul>
+</div>
+<div class="col-sm-4">
+    <h5 class="fw-bolder mb-2">Resources</h5>
+    <ul class="list-unstyled">
+        <li class="mb-2">
+            <a href="#" class="link">Start</a>
+        </li>
+
+        <li class="mb-2">
+            <a href="#" class="link">Extender</a>
+        </li>
+
+        <li class="mb-2">
+            <a href="#" class="link">Light</a>
+        </li>
+
+
+
+        <li class="mb-2">
+            <a href="#" class="link">Compact</a>
+        </li>
+    </ul>
+                </div>
+</div>
+    </div>
+<div class="col-md-6">
+<h5 class="fw-bolder mb-4">
+    Quick links
+</h5>
+<div class="row">
+    <div class="col-sm-6 text-center">
+        <a href="#" class="card border-0 text-decoration-none card-custom bg-light-danger shadow-none mb-3">
+            <div class="card-body  d-flex flex-column">
+                <p class="lead mb-2 text-dark fw-bolder">Demo</p>
+                <p class="mb-0 text-muted">Free version</p>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+    <div class="col-sm-6 text-center">
+        <a href="#" class="card border-0 text-decoration-none card-custom bg-light-success shadow-none mb-3">
+            <div class="card-body  d-flex flex-column">
+                <p class="lead mb-2 text-dark fw-bolder">Demo</p>
+                <p class="mb-0 text-muted">Free version</p>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<div class="row">
+    <div class="col-12 text-center">
+
+            <a href="#" class="card border-0 text-decoration-none card-custom bg-light-primary shadow-none mb-3">
+                <div class="card-body  d-flex flex-column">
+                    <p class="lead mb-2 text-dark fw-bolder">Demo</p>
+                    <p class="mb-0 text-muted">Free version</p>
+                </div>
+            </a>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 text-center">
+        <a href="#" class="card border-0 text-decoration-none card-custom bg-light-warning shadow-none mb-3">
+            <div class="card-body  d-flex flex-column">
+                <p class="lead mb-2 text-dark fw-bolder">Demo</p>
+                <p class="mb-0 text-muted">Free version</p>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+    <div class="col-sm-6 text-center">
+        <a href="#" class="card border-0 text-decoration-none card-custom bg-light-info shadow-none mb-3">
+            <div class="card-body  d-flex flex-column">
+                <p class="lead mb-2 text-dark fw-bolder">Demo</p>
+                <p class="mb-0 text-muted">Free version</p>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+                    </div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-default-bg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content p-5">
+    <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+    <button type="button" class="btn btn-green" data-bs-dismiss="modal" aria-label="Close">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px btn-green"><g id="Group" transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#fff"><rect fill="#fff" id="Rectangle-185" x="0" y="7" width="16" height="2" rx="1"></rect><rect fill="#fff" id="Rectangle-185-Copy" opacity="0.5" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="7" width="16" height="2" rx="1"></rect></g></svg>
+
+    </button>
+    </div>
+    <div class="modal-body px-5">
+<div class="row mb-4">
+<div class="col-12">
+    <input type="search" class="form-control text-center border-0" style="font-size: 50px;" placeholder="Search.." name="" id="">
+</div>
+</div>
+<p class="lead mb-2 text-dark fw-bolder">
+    Shop Goods
+</p>
+<div class="row align-items-center mt-3">
+    <div class="col-sm-2 mt-2">
+        <div class="card border-0">
+            <img src="img-1.jpg" class="rounded-3 img-fluid" alt="">
+  <a href="#" class="stretched-link"></a>      </div>
+  <br>
+  <div class="card border-0">
+    <img src="img-11.jpg" class="rounded-3 img-fluid" alt="">
+<a href="#" class="stretched-link"></a>      </div>
+    </div>
+<div class="col-sm-4 mt-2">
+    <div class="card border-0">
+        <img src="img-17.jpg" class="rounded-3 img-fluid" alt="">
+    <a href="#" class="stretched-link"></a>      </div>
+</div>
+<div class="col-sm-4 mt-2">
+    <div class="card border-0">
+        <img src="img-23.jpg" class="rounded-3 img-fluid" alt="">
+    <a href="#" class="stretched-link"></a>      </div>
+</div>
+</div>
+<div class="table-responsive mt-5">
+
+  <table class="table align-center">
+
+    <tbody>
+      <tr>
+        <th scope="row">
+            <img src="009-boy-4.svg" width="50" class="img-fluid" alt="">
+        </th>
+        <td class="fw-bolder">Mark</td>
+        <td class="fw-bolder">Otto</td>
+        <td class="fw-bolder">@mdo</td>
+        <td class="btn bg-light-success ">
+            <span class="svg-icon svg-icon-4 p-1 bg-light-success">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <img src="009-boy-4.svg" width="50" class="img-fluid" alt="">
+        </th>
+        <td class="fw-bolder">Mark</td>
+        <td class="fw-bolder">Otto</td>
+        <td class="fw-bolder">@mdo</td>
+        <td class="btn bg-light-success ">
+            <span class="svg-icon svg-icon-4 p-1 bg-light-success">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                </span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <img src="009-boy-4.svg" width="50" class="img-fluid" alt="">
+        </th>
+        <td class="fw-bolder">Mark</td>
+        <td class="fw-bolder">Otto</td>
+        <td class="fw-bolder">@mdo</td>
+        <td class="btn bg-light-success ">
+            <span class="svg-icon svg-icon-4 p-1 bg-light-success">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                </span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <button type="button" class="btn btn-default-bg" id="liveToastBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    </button>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" >
+          <strong class="me-auto">YAZ GROUP</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-green w-100" style="color: white;">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-default-bg" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end border-0 p-0 rounded-3" aria-labelledby="dropdownMenuOffset" style="width: 270px;">
+<div class="d-flex text-white align-items-center justify-content-evenly p-3 bg-info rounded-2">
+    <div>
+        <img src="001-boy.svg" height="60" width="60"  alt="">
+    </div>
+
+    <div>
+        <p>
+            <span class="fs-5 fw-bolder">
+                Hello, James
+            </span>
+            <br>
+            CRM Product Designer
+
+        </p>
+    </div>
+</div>
+
+
+<div class="row text-center px-3 text-dark mb-0 position-relative ">
+    <div class="col-6 border border-2 py-3 border-top-0 border-start-0 position-relative">
+        <a href="#" class="stretched-link btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <br>
+              Profile
+        </a>
+</div>
+
+
+
+
+
+<div class="col-6 border border-2 py-3 border-top-0 border-start-0 border-end-0 position-relative">
+    <a href="#" class="stretched-link btn">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-sliders mb-3" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+      </svg>
+          <br>
+          Settings
+    </a>
+</div>
+<br>
+
+
+<div class="col-6 border border-2 py-3 border-top-0 border-start-0 border-bottom-0 position-relative">
+    <a href="#" class="stretched-link btn">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-subtract mb-3" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+          </svg>
+          <br>
+          Subscribe
+    </a>
+</div>
+
+
+
+<div class="col-6 border border-2 py-3 border-top-0 border-start-0 border-bottom-0 border-end-0 position-relative">
+    <a href="#" class="stretched-link btn">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right mb-3" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>
+          <br>
+          Sign Out
+    </a>
+</div>
+
+</div>
+
+
+</ul>
+</div>
+
+
+<div class="container mt-4">
+<div class="row justify-content-evenly">
+    <div class="col-md-4 col-8 p-5 text-center bg-body rounded-3">
+        <div class="fs-3 fw-bolder lh-lg">
+            Kickstart <div class="w-100"></div>
+            Mobile Application
+        </div>
+        <br>
+        <a href="#" class="btn mb-auto btn-green rounded-3 px-3 py-2 link-light mb-auto" style="color: white;">Create App</a>
+        <img src="terms-2.svg" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-7 mt-md-0 mt-4 rounded-3 p-4 bg-body">
+        <div class="row align-items-center text-center text-xl-start">
+            <div class="col-12">
+                <h4 class="text-dark">Campaign Leaders</h4>
+                <p class="text-muted">
+                    890,344 Sales
+                </p>
+            </div>
+            <br>
+            <div class="col-12">
+                <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home1" role="tab" aria-controls="list-home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile1" role="tab" aria-controls="list-profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages1" role="tab" aria-controls="list-messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings1" role="tab" aria-controls="list-settings">Settings</a>
+                  </div>
+            </div>
+        </div>    <div class="table-responsive-md">
+        <div class="tab-content  my-5" id="nav-tabContent" >
+            <div class="tab-pane fade show active" id="list-home1" role="tabpanel" aria-labelledby="list-home-list1">
+                <div class="row mx-3 align-items-center justify-content-center flex-nowrap">
+                    <div class="col-auto p-3 bg-light-success rounded-3 btn-light-success">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+
+
+                    </div>
+                    <div class="col">
+                        <h6>Popular authors</h6>
+                        <small class="text-muted small">HTML/CSS/JS, Python</small>
+                    </div>
+                    <div class="col me-3">
+                        <h6 class="mb-2">
+                            Progress
+                        </h6>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+                        <span class="svg-icon svg-icon-4">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                            </span>
+                    </div>
+</div>
+<!--Second row-->
+<div class="row mt-4 mx-3 align-items-center justify-content-center flex-nowrap">
+    <div class="col-auto p-3 bg-light-danger rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+</div>
+<!--Third row-->
+<div class="row mx-3 mt-4 align-items-center justify-content-center flex-nowrap">
+    <div class="col-auto p-3 bg-light-info rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+                        </div>
+                </div>
+
+            <div class="tab-pane fade" id="list-profile1" role="tabpanel" aria-labelledby="list-profile-list1">
+                <div class="row mx-3 align-items-center justify-content-center">
+                    <div class="col-auto p-3 bg-light-success rounded-3 btn-light-success">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+
+
+                    </div>
+                    <div class="col">
+                        <h6>Popular authors</h6>
+                        <small class="text-muted small">HTML/CSS/JS, Python</small>
+                    </div>
+                    <div class="col me-3">
+                        <h6 class="mb-2">
+                            Progress
+                        </h6>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+                        <span class="svg-icon svg-icon-4">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                            </span>
+                    </div>
+</div>
+<!--Second row-->
+<div class="row mt-4 mx-3 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-danger rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+</div>
+<!--Third row-->
+<div class="row mx-3 mt-4 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-info rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+                        </div>
+            </div>
+            <div class="tab-pane fade" id="list-messages1" role="tabpanel" aria-labelledby="list-messages-list1">
+                <div class="row mx-3 align-items-center justify-content-center">
+                    <div class="col-auto p-3 bg-light-success rounded-3 btn-light-success">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+
+
+                    </div>
+                    <div class="col">
+                        <h6>Popular authors</h6>
+                        <small class="text-muted small">HTML/CSS/JS, Python</small>
+                    </div>
+                    <div class="col me-3">
+                        <h6 class="mb-2">
+                            Progress
+                        </h6>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+                        <span class="svg-icon svg-icon-4">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                            </span>
+                    </div>
+</div>
+<!--Second row-->
+<div class="row mt-4 mx-3 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-danger rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+</div>
+<!--Third row-->
+<div class="row mx-3 mt-4 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-info rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+                        </div>
+            </div>
+            <div class="tab-pane fade" id="list-settings1" role="tabpanel" aria-labelledby="list-settings-list1">
+                <div class="row mx-3 align-items-center justify-content-center">
+                    <div class="col-auto p-3 bg-light-success rounded-3 btn-light-success">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+
+
+                    </div>
+                    <div class="col">
+                        <h6>Popular authors</h6>
+                        <small class="text-muted small">HTML/CSS/JS, Python</small>
+                    </div>
+                    <div class="col me-3">
+                        <h6 class="mb-2">
+                            Progress
+                        </h6>
+                        <div class="progress mt-3">
+                            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+                        <span class="svg-icon svg-icon-4">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+                            </span>
+                    </div>
+</div>
+<!--Second row-->
+<div class="row mt-4 mx-3 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-danger rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+</div>
+<!--Third row-->
+<div class="row mx-3 mt-4 align-items-center justify-content-center">
+    <div class="col-auto p-3 bg-light-info rounded-3 btn-light-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+
+    </div>
+    <div class="col">
+        <h6>Popular authors</h6>
+        <small class="text-muted small">HTML/CSS/JS, Python</small>
+    </div>
+    <div class="col me-3">
+        <h6 class="mb-2">
+            Progress
+        </h6>
+        <div class="progress mt-3">
+            <div class="progress-bar bg-light-success" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+    <div class="col-auto bg-light text-center p-2 px-3 rounded-3">
+        <span class="svg-icon svg-icon-4">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mh-50px"><g id="Stockholm-icons-/-Navigation-/-Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon><rect id="Rectangle" fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"></rect><path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "></path></g></svg>
+            </span>
+    </div>
+                        </div>
+            </div>
+          </div>
+    </div></div>
+</div>
+</div>
+
+<div class="container my-4">
+    <div class="row justify-content-evenly">
+        <div class="col-md-4 col-8 p-5 text-center bg-body rounded-3">
+            <div class="card-body">
+
+
+<h4 class="text-dark mb-5">Campaign Leaders</h4>
+<p class="text-muted">890,344 Sales</p>
+<div class="chart chart-sm">
+    <canvas id="chartjs-doughnut"></canvas>
+  </div>
+        </div>
+    </div>
+<div class="col-md-7 col-11 p-5 mt-md-0 mt-4 bg-body rounded-3">
+    <div class="table-responsive" style="width: 100%;">
+    <div class="row">
+        <div class="mb-2 mt-0">
+<h6 class="text-dark">Milestones
+</h6>
+<small class="text-muted">
+    890,344 Sales
+</small>
+        </div>
+<div class="col-md-4 my-4 ">
+    <div class="list-group list-group-horizontal-md" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home2" role="tab" aria-controls="list-home">Sales</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile2" role="tab" aria-controls="list-profile">Sales</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages2" role="tab" aria-controls="list-messages">Sales</a>
+
+      </div>
+</div>
+<div class="col-12">
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="row justify-content-evenly mb-1">
+<div class="col-auto">
+
+    <small class="text-muted">Sales</small>
+    <p class="fs-6 fw-bolder">$650</p>
+</div>
+<div class="col-auto">
+
+    <small class="text-muted">Sales</small>
+    <p class="fs-6 fw-bolder">$650</p>
+</div>
+<div class="col-auto">
+
+    <small class="text-muted">Sales</small>
+    <p class="fs-6 fw-bolder">$650</p>
+</div>
+            </div>
+            <div class="card-body">
+                <canvas id="chartjs-bar"></canvas>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="row justify-content-evenly mb-1">
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                            </div>
+                            <div class="card-body">
+                                <canvas id="line-chart" width="100%" height="40"></canvas>
+                            </div>
+        </div>
+        <div class="tab-pane fade" id="list-messages2" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="row justify-content-evenly mb-1">
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                <div class="col-auto">
+
+                    <small class="text-muted">Sales</small>
+                    <p class="fs-6 fw-bolder">$650</p>
+                </div>
+                            </div>
+                            <div class="card-body">
+                                <canvas id="bar-chart-horizontal" width="100%" height="40"></canvas>
+</div>
+</div>
+      </div>
+</div>
+
+
+
+
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="container my-4">
+    <div class="row justify-content-evenly">
+        <div class="col-md-4 col-8 p-5 bg-body rounded-3">
+            <p class="fs-5 text-muted">
+                Today's Schedule
+            </p>
+            <br>
+            <p class="text-dark fs-4 fw-bolder">
+                UI/UX Design Updates
+            </p>
+            <p class="fs-3 text-green fw-bolder mt-auto">
+                16:15AM - 11:20PM
+            </p>
+            <a href="#" class="btn btn-green  rounded-3 px-3 py-2 link-light mb-auto " style="color: white;">
+            Schedule Map
+        </a>
+        </div>
+        <div class="col-md-7 col-11 mt-md-0 mt-4 p-5 text-center bg-body rounded-3">
+            <canvas id="mixed-chart" width="100%" height="70"></canvas>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+        </div>
+    </div>
+</div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      new Chart(document.getElementById("radar-chart"), {
+    type: 'radar',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "1950",
+          fill: true,
+          backgroundColor: "rgba(179,181,198,0.2)",
+          borderColor: "rgba(179,181,198,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(179,181,198,1)",
+          data: [8.77,55.61,21.69,6.62,6.82]
+        }, {
+          label: "2050",
+          fill: true,
+          backgroundColor: "rgba(255,99,132,0.2)",
+          borderColor: "red",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(255,99,132,1)",
+          pointBorderColor: "#fff",
+          data: [25.48,54.16,7.61,8.06,4.45]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Distribution in % of world population'
+      }
+    }
+});
+    </script>
+    <script>
+      new Chart(document.getElementById("polar-chart"), {
+    type: 'polarArea',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+    </script>
+    <script>
+      new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["1900", "1950", "1999", "2050"],
+      datasets: [
+        {
+          label: "Africa",
+          backgroundColor: "#fff",
+          data: [133,221,783,2478]
+        }, {
+          label: "Europe",
+          backgroundColor: "silver",
+          data: [408,547,675,734]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Population growth (millions)'
+      }
+    }
+});
+    </script>
+    <script>
+      new Chart(document.getElementById("mixed-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["1900", "1950", "1999", "2050"],
+      datasets: [{
+          label: "Europe",
+          type: "line",
+          borderColor: "#8e5ea2",
+          data: [408,547,675,734],
+          fill: false
+        }, {
+          label: "Africa",
+          type: "line",
+          borderColor: "#3e95cd",
+          data: [133,221,783,2478],
+          fill: false
+        }, {
+          label: "Europe",
+          type: "bar",
+          backgroundColor: "rgba(0,0,0,0.2)",
+          data: [408,547,675,734],
+        }, {
+          label: "Africa",
+          type: "bar",
+          backgroundColor: "rgba(0,0,0,0.2)",
+          backgroundColorHover: "#3e95cd",
+          data: [133,221,783,2478]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true
+
+      },
+      legend: { display: false }
+    }
+});
+    </script>
+    <script>
+      new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+
+    </script>
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+    datasets: [{
+        data: [86,114,106,106,107,111,133,221,783,2478],
+        label: "Africa",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: [282,350,411,502,635,809,947,1402,3700,5267],
+        label: "Asia",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: [168,170,178,190,203,276,408,547,675,734],
+        label: "Europe",
+        borderColor: "#3cba9f",
+        fill: false
+      }, {
+        data: [40,20,10,16,24,38,74,167,508,784],
+        label: "Latin America",
+        borderColor: "#e8c3b9",
+        fill: false
+      }, {
+        data: [6,3,2,2,7,26,82,172,312,433],
+        label: "North America",
+        borderColor: "#c45850",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'World population per region (in millions)'
+    }
+  }
+});
+    </script>
+<script>
+
+  new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+</script>
+	<script>
+
+		document.addEventListener("DOMContentLoaded", function() {
+			// Line chart
+			new Chart(document.getElementById("chartjs-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: "transparent",
+						borderColor: window.theme.primary,
+						data: [2115, 1562, 1584, 1892, 1487, 2223, 2966, 2448, 2905, 3838, 2917, 3327]
+					}, {
+						label: "Orders",
+						fill: true,
+						backgroundColor: "transparent",
+						borderColor: "transparent",
+						borderDash: [4, 4],
+						data: [958, 724, 629, 883, 915, 1214, 1476, 1212, 1554, 2128, 1466, 1827]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.05)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 500
+							},
+							display: true,
+							borderDash: [5, 5],
+							gridLines: {
+								color: "rgba(0,0,0,0)",
+								fontColor: "#fff"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Last year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}, {
+						label: "This year",
+						backgroundColor: "#dee2e6",
+						borderColor: "#dee2e6",
+						hoverBackgroundColor: "#dee2e6",
+						hoverBorderColor: "#dee2e6",
+						data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Doughnut chart
+			new Chart(document.getElementById("chartjs-doughnut"), {
+				type: "doughnut",
+				data: {
+					labels: ["Social", "Search Engines", "Direct", "Other"],
+					datasets: [{
+						data: [260, 125, 54, 146],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.success,
+							window.theme.warning,
+							"#dee2e6"
+						],
+						borderColor: "transparent"
+					}]
+				},
+				options: {
+
+					cutoutPercentage: 65,
+					legend: {
+						display: false
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Social", "Search Engines", "Direct", "Other"],
+					datasets: [{
+						data: [260, 125, 54, 146],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger,
+							"#dee2e6"
+						],
+						borderColor: "transparent"
+					}]
+				},
+
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Radar chart
+			new Chart(document.getElementById("chartjs-radar"), {
+				type: "radar",
+				data: {
+					labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency"],
+					datasets: [{
+						label: "Model X",
+						backgroundColor: "rgba(0, 123, 255, 0.2)",
+						borderColor: window.theme.primary,
+						pointBackgroundColor: window.theme.primary,
+						pointBorderColor: "#fff",
+						pointHoverBackgroundColor: "#fff",
+						pointHoverBorderColor: window.theme.primary,
+						data: [70, 53, 82, 60, 33]
+					}, {
+						label: "Model S",
+						backgroundColor: "rgba(220, 53, 69, 0.2)",
+						borderColor: window.theme.danger,
+						pointBackgroundColor: window.theme.danger,
+						pointBorderColor: "#fff",
+						pointHoverBackgroundColor: "#fff",
+						pointHoverBorderColor: window.theme.danger,
+						data: [35, 38, 65, 85, 84]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Polar Area chart
+			new Chart(document.getElementById("chartjs-polar-area"), {
+				type: "polarArea",
+				data: {
+					labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency"],
+					datasets: [{
+						label: "Model S",
+						data: [35, 38, 65, 70, 24],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.success,
+							window.theme.danger,
+							window.theme.warning,
+							window.theme.info
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false
+				}
+			});
+		});
+	</script>
+    <script>
+
+        $(document).ready(function() {
+            $('#liveToastBtn').click(function() {
+                $('.toast').toast('show');
+            });
+
+        })
+
+
+    </script>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

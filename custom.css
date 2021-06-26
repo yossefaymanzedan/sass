@@ -1,0 +1,148 @@
+@media (min-width: 992px) {
+    nav {
+        height: 100vh;
+        width: 360px;
+        padding-right: 00px;
+    }
+    .main {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        width: 100%;
+    }
+}
+nav .list-group-item {
+    background-color: #4f0ca4;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+nav .list-group .active {
+    background-color: #20d489;
+}
+nav ::-webkit-scrollbar {
+    width: .1rem;
+}
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 99px;
+    border: 4px solid white;
+
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+.btn-default {
+    color: #20d489;
+    border-color: #f9f2e7;
+    background-color: #f9f2e7;
+    margin-right: 5px;
+}
+.btn-default:hover {
+    color: #20d489;
+    border-color: #f9f2e7;
+    background-color: #f9f2e7;
+    margin-right: 5px;
+}
+.btn-default-bg {
+    border-color: #f9f2e7;
+    background-color: #f9f2e7;
+    margin-right: 5px;
+
+}
+
+.btn-default-bg:hover {
+    border-color: #f9f2e7;
+    background-color: #f9f2e7;
+    margin-right: 5px;
+
+}
+.btn-green {
+    color: #20d489;
+    border-color: #20d489d5;
+    background-color: #20d489;
+}
+.link-green {
+    color: #20d489;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.link-green:hover {
+    color: #20d489;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.text-green {
+    color: #20d489;
+}
+.link {
+    margin-bottom: 1rem;
+    color: #7e8299;
+    text-decoration: none;
+}
+.link:hover {
+    margin-bottom: 1rem;
+    color: #20d489;
+    text-decoration: none;
+}
+.bg-light-success {
+    background-color: #e7f6ff;
+}
+.btn-light-success {
+    color: #6a96b4;
+}
+.bg-light-danger {
+    background-color: #ffeff3;
+}
+.btn-light-danger {
+    background-color: #ffeff3;
+    color: #ccb4ba;
+}
+.bg-light-primary {
+    background-color: #e4fff4;
+}
+.btn-light-primary {
+    background-color: #e4fff4;
+    color: #a9c7bb;
+}
+.bg-light-warning {
+    background-color: #fff8dd;
+}
+.bg-light-info {
+    background-color: #f6f1fc;
+}
+td {
+    padding-top: 50px;
+}
+.small {
+    font-size: .9rem;
+}
+.offcanvas ::-webkit-scrollbar {
+    width: .4rem;
+}
+.offcanvas ::-webkit-scrollbar-thumb {
+ background-color: white;
+ border-radius: 99px;
+ border: 4px solid black;
+}
+.offcanvas ::-webkit-scrollbar-track {
+    background-color: white;
+}
+.modal ::-webkit-scrollbar {
+    width: .5rem;
+}
+.modal ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 99px;
+    border: 4px solid black;
+}
+.modal ::-webkit-scrollbar-track {
+    background: white;
+}

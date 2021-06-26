@@ -1,0 +1,14 @@
+$info:      #5710b2;
+$offcanvas-vertical-height:         100vh;
+$danger:        #fbf9f6;
+$list-group-active-color:           #181C32;
+$list-group-active-bg:              #e6e6e6;
+$list-group-border-radius:          5px;
+
+$list-group-border-width:          none;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+.main {
+    color: #212529;
+}
